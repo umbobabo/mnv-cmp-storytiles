@@ -1,0 +1,13 @@
+{
+  "bundle": {
+    "assets": {
+      "version": "0.1.0",
+      "host": "cdn.static-economist.com"
+    },
+    "data": {
+      "version": "0.1.0",
+      "url": "sites/default/files/external/minerva_data/ec-storytiles/0.1.0/data-jsonp.json",
+      "provider": "jsonp"
+    }
+  }
+}

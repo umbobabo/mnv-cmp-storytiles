@@ -1,0 +1,44 @@
+<!-- 
+<div id="expander">
+  <div id="expander-container">
+    <div class="title">expander - full page article</div>
+    <div class="close">close</div>
+    <div class="expander-image"><img></div>
+    <div class="expander-copy">copy</div>
+  </div>
+</div> -->
+
+ <!--  "jsns": "mnv-widget ukel-linechart",
+          "ns" : "ukel-linechart-CUSTOMSUFFIXHERE"
+          }
+
+
+<div  class="mnv-widget ukel-linechart" id="ukel-linechart-CUSTOMSUFFIXHERE"></div> -->
+
+
+<div class="container">
+    <ul>
+  {{#each tiles}}
+    <li class="{{type}}">
+        <!-- <a href="{{readMoreLink}}"> -->
+          <div class="tile-container">
+            {{#if widget}}<div class="{{widget.jsns}}" id="{{{widget.ns}}}"></div>{{/if}}
+      <div class="image">
+        <img src="{{img.src}}" src-set="{{img.srcSet}}" alt="{{title}}">
+      </div>
+      <div class="copy">
+        <h1>{{title}}</h1>
+        <h2>{{flytitle}}</h2>
+        <div class="rubric">
+          {{rubric}}
+        </div>
+      </div>
+          {{#if hr}}<hr>{{/if}}
+        </div>
+         <!-- </a> -->
+    </li>
+
+ 
+  {{/each}}
+</ul>
+</div>
